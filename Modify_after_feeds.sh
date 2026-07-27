@@ -18,4 +18,4 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
-svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-easymesh package/luci-app-easymesh
+git_clone https://github.com/ntlf9t/luci-app-easymesh
