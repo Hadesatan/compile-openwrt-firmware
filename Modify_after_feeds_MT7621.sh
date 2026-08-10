@@ -24,7 +24,7 @@
 # 注意 URL 中的 /trunk/ 对应仓库的默认分支（通常是 main 或 master）。如果要下载其他分支，使用 /branches/分支名/。
 # mv https://github.com/padavanonly/immortalwrt/package/emortal/luci-app-turboacc-mtk ./package/emortal/luci-app-turboacc-mtk
 git clone https://github.com/theosoft-git/luci-app-easymesh ./package/luci-app-easymesh
-sed -i 's/LUCI_DEPENDS:=+qbittorrent-enhanced-edition/LUCI_DEPENDS:=+qbittorrent/g' ./openwrt/feeds/luci/applications/luci-app-qbittorrent/Makefile
+sed -i 's/LUCI_DEPENDS:=+qbittorrent-enhanced-edition/LUCI_DEPENDS:=+qbittorrent/g' ./feeds/luci/applications/luci-app-qbittorrent/Makefile
 git clone https://github.com/immortalwrt/packages test1
 cp -r ./test1/net/qbittorrent ./package/qbittorrent
 rm -rf ./test1
