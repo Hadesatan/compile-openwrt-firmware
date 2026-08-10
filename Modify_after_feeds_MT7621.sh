@@ -26,5 +26,5 @@
 git clone https://github.com/theosoft-git/luci-app-easymesh ./package/luci-app-easymesh
 sed -i 's/LUCI_DEPENDS:=+qbittorrent-enhanced-edition/LUCI_DEPENDS:=+qbittorrent/g' ./feeds/luci/applications/luci-app-qbittorrent/Makefile
 git clone https://github.com/immortalwrt/packages test1
-cp -r ./test1/net/qbittorrent ./package/qbittorrent
+cp -r ./test1/net/qbittorrent ./package/
 rm -rf ./test1
