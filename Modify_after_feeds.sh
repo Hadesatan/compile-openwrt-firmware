@@ -22,4 +22,4 @@
 # git_clone https://github.com/timsaya/openwrt-bandix bandix2 && mv -f bandix2/openwrt-bandix ./;rm -rf bandix2
 # svn export https://github.com/用户名/仓库名/trunk/文件夹路径
 # 注意 URL 中的 /trunk/ 对应仓库的默认分支（通常是 main 或 master）。如果要下载其他分支，使用 /branches/分支名/。
-git clone https://github.com/theosoft-git/luci-app-easymesh ./package/luci/luci-app-easymesh
+git clone https://github.com/theosoft-git/luci-app-easymesh ./package/luci-app-easymesh
