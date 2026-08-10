@@ -15,7 +15,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config_Newifi-D2.config
   DIY_P1_SH: Edit_feeds.sh
-  DIY_P2_SH: Modify_after_feeds.sh
+  DIY_P2_SH: Modify_after_feeds_MT7621.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
