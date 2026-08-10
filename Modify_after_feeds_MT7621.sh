@@ -27,5 +27,6 @@ git clone https://github.com/theosoft-git/luci-app-easymesh ./package/luci-app-e
 git clone https://github.com/Hadesatan/Hades-packages
 mkdir -p ./dl
 mv ./Hades-packages/myipk/*.ipk ./dl/
-mv ./Hades-packages/myipk/* ./package/
+mkdir -p ./package/HadesIPK
+mv ./Hades-packages/myipk/* ./package/HadesIPK/
 rm -rf ./Hades-packages
