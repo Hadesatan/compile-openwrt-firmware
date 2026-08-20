@@ -22,7 +22,7 @@ uci set wireless.default_radio0.ssid='Immortalwrt-2'
 uci set wireless.default_radio0.encryption='psk2+ccmp'
 uci set wireless.default_radio0.key='Sui123456'
 
-# uci set wireless.management_wifi=wifi-iface
+uci set wireless.management_wifi=wifi-iface
 uci set wireless.management_wifi.device='radio0'
 uci set wireless.management_wifi.network='lan'
 uci set wireless.management_wifi.mode='ap'
