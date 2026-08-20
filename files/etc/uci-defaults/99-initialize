@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "root:Openwrt_1234567" | chpasswd
+echo -e "Openwrt_1234567\nOpenwrt_1234567" | (passwd root)
 
 # ===wan (eth0) dhcp--pppoe
 uci set network.wan.proto='pppoe'
@@ -31,7 +31,7 @@ uci set wireless.management_wifi.encryption='psk2'
 uci set wireless.management_wifi.key='Sui123456'
 
 uci set wireless.radio1.disabled='0'
-uci set wireless.radio0.band='5g'
+uci set wireless.radio1.band='5g'
 uci set wireless.radio1.channel='36'
 uci set wireless.radio1.htmode='VHT80'
 uci set wireless.radio1.country='CN'
