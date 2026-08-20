@@ -13,15 +13,18 @@ uci commit network
 
 # ===wifi
 uci set wireless.radio0.disabled='0'
+uci set wireless.radio0.band='2g'
 uci set wireless.radio0.country='CN'
 uci set wireless.radio0.channel='1'
 uci set wireless.radio0.htmode='HT20'
 # uci set wireless.radio0.txpower='20'
-uci set wireless.default_radio0.ssid='Pandorabox-2.4G'
+uci set wireless.radio0.cell_density='1'
+uci set wireless.default_radio0.ssid='PandoraBox-2.4G'
 uci set wireless.default_radio0.encryption='psk2'
 uci set wireless.default_radio0.key='Sui123456'
 uci set wireless.default_radio0.disabled='0'
 
+# uci set wireless.my_wifi_ap=wifi-iface
 uci add wireless wifi-iface
 uci set wireless.@wifi-iface[-1].device='radio0'
 uci set wireless.@wifi-iface[-1].network='lan'
@@ -33,11 +36,13 @@ uci set wireless.@wifi-iface[-1].key='Sui123456'
 uci set wireless.@wifi-iface[-1].disabled='0'
 
 uci set wireless.radio1.disabled='0'
+uci set wireless.radio0.band='5g'
 uci set wireless.radio1.country='CN'
 uci set wireless.radio1.channel='36'
 uci set wireless.radio1.htmode='VHT80'
 # uci set wireless.radio1.txpower='20'
-uci set wireless.default_radio1.ssid='Pandorabox-5G'
+uci set wireless.radio1.cell_density='1'
+uci set wireless.default_radio1.ssid='PandoraBox-5G'
 uci set wireless.default_radio1.encryption='psk2'
 uci set wireless.default_radio1.key='Sui123456'
 uci set wireless.default_radio1.disabled='0'
