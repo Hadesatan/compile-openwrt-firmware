@@ -68,7 +68,6 @@ jobs:
       run: |
         df -hT $GITHUB_WORKSPACE
         git clone -b $REPO_BRANCH $REPO_URL openwrt
-        cp -r ./file/ ./openwrt/
         cd openwrt
         git checkout $REPO_TAG
         echo "OPENWRT_PATH=$PWD" >> $GITHUB_ENV
@@ -106,7 +105,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        [ -e files ] && mv files openwrt/files
+        [ -e files ] && mv files openwrt/files && chmod +x openwrt/files/etc/uci-defaults/*
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
