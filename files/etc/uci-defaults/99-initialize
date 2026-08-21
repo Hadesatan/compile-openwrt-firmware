@@ -19,13 +19,13 @@ uci set wireless.default_radio0.ssid='Immortalwrt-2'
 uci set wireless.default_radio0.encryption='psk2+ccmp'
 uci set wireless.default_radio0.key='Sui123456'
 
-uci set wireless.management_wifi=wifi-iface
-uci set wireless.management_wifi.device='radio0'
-uci set wireless.management_wifi.network='lan'
-uci set wireless.management_wifi.mode='ap'
-uci set wireless.management_wifi.ssid='PandoraBox-2.4G'
-uci set wireless.management_wifi.encryption='psk2'
-uci set wireless.management_wifi.key='Sui123456'
+uci set wireless.app_wifi=wifi-iface
+uci set wireless.app_wifi.device='radio0'
+uci set wireless.app_wifi.network='lan'
+uci set wireless.app_wifi.mode='ap'
+uci set wireless.app_wifi.ssid='PandoraBox-2.4G'
+uci set wireless.app_wifi.encryption='psk2'
+uci set wireless.app_wifi.key='Sui123456'
 
 uci set wireless.radio1.disabled='0'
 uci set wireless.radio1.band='5g'
